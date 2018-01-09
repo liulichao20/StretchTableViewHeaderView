@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942CD33F2004A85000582A76 /* StretchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CD33E2004A85000582A76 /* StretchController.swift */; };
+		942CD3412004AA4E00582A76 /* StretchController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CD3402004AA4E00582A76 /* StretchController2.swift */; };
 		9471776E1FE0C6F3002D96F3 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471776D1FE0C6F3002D96F3 /* NavigationView.swift */; };
 		9471CEFD1FDFDC410076291A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471CEFC1FDFDC410076291A /* AppDelegate.swift */; };
 		9471CEFF1FDFDC410076291A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9471CEFE1FDFDC410076291A /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942CD33E2004A85000582A76 /* StretchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchController.swift; sourceTree = "<group>"; };
+		942CD3402004AA4E00582A76 /* StretchController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchController2.swift; sourceTree = "<group>"; };
 		9471776D1FE0C6F3002D96F3 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		9471CEF91FDFDC410076291A /* StretchTableViewHeaderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchTableViewHeaderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9471CEFC1FDFDC410076291A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			children = (
 				9471CEFC1FDFDC410076291A /* AppDelegate.swift */,
 				9471CEFE1FDFDC410076291A /* ViewController.swift */,
+				942CD33E2004A85000582A76 /* StretchController.swift */,
+				942CD3402004AA4E00582A76 /* StretchController2.swift */,
 				9471776D1FE0C6F3002D96F3 /* NavigationView.swift */,
 				9471CF0E1FDFE1580076291A /* StretchHeaderView.swift */,
 				9471CF001FDFDC410076291A /* Main.storyboard */,
@@ -142,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942CD3412004AA4E00582A76 /* StretchController2.swift in Sources */,
+				942CD33F2004A85000582A76 /* StretchController.swift in Sources */,
 				9471CEFF1FDFDC410076291A /* ViewController.swift in Sources */,
 				9471CF0F1FDFE1580076291A /* StretchHeaderView.swift in Sources */,
 				9471776E1FE0C6F3002D96F3 /* NavigationView.swift in Sources */,

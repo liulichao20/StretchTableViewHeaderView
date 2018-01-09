@@ -8,19 +8,21 @@
 
 import UIKit
 
-class StretchHeaderView:UIImageView {
+class StretchHeaderView:UIView {
 
     weak var tableView:UITableView?
     var initialFrame:CGRect = CGRect.zero
     var defaultViewHeight:CGFloat = 200
-    var contentView:UIView!
+    var contentView:UIImageView!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentMode = .scaleAspectFill
-        clipsToBounds = true
-        contentView = UIView(frame: bounds)
+        contentView = UIImageView(frame: bounds)
         contentView.backgroundColor = UIColor.clear
+        contentView.contentMode = .scaleAspectFill
+        contentView.clipsToBounds = true
+        addSubview(contentView)
+        contentView.backgroundColor = UIColor.orange
         initialFrame = frame
         defaultViewHeight = frame.size.height
     }
@@ -34,7 +36,6 @@ class StretchHeaderView:UIImageView {
         let headerView = UIView(frame: initialFrame)
         tableView.tableHeaderView = headerView
         tableView.addSubview(self)
-        tableView.addSubview(contentView)
         configContentViewBlock(contentView)
     }
     
@@ -47,12 +48,12 @@ class StretchHeaderView:UIImageView {
             initialFrame.size.width = tableView!.frame.width + (offsetY > 0 ? offsetY : -offsetY)
             initialFrame.size.height = defaultViewHeight + offsetY
             
-            frame = initialFrame
+            contentView.frame = initialFrame
         }else {
             var f = frame
             f.size.width = tableView!.frame.size.width
             f.origin.x = 0
-           frame = f
+           contentView.frame = f
         }
     }
     
